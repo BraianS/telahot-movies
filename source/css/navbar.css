@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    background-color: var(--primary-color);
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2px;
+    list-style: none;
+}
+
+.navbar__brand {
+    justify-content: flex-start;
+    flex-grow: 1;
+    font-weight: 700;
+    font-size: var(--font-size-h3);
+    color: #fff;
+    color: var(--second-color-alt);
+}
+
+.navbar a:link {
+    text-decoration: none;
+}
+
+.navbar__item {
+    justify-content: flex-end;
+    font-size: var(--font-size-h4);
+    font-weight: 700;
+    color: #fff;
+    padding-left: 15px;
+}

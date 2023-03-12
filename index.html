@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./source/css/index.css">
+    <title>TelaHot</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar" data-reveal="top">
+            <li class="navbar__brand">TelaHot</li>
+            <li>
+                <a class="navbar__item" href="#footer">Sobre</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container margin-auto">
+        <hero class="hero">
+            <h1 class="hero__title" data-reveal="top">Bem-vindo ao <span class="red--color">TelaHot</span></h1>
+            <h1 class="hero__subtitle" data-reveal="left">Escolha o ano e o filme desejado para obter mais informações.
+            </h1>
+            <ul class="hero__categorias" data-reveal="bottom"></ul>
+        </hero>
+
+        <movie class="movie">
+            <h2 class="movie__title"></h2>
+            <div class="movie__content"></div>
+        </movie>
+
+        <about class="about">
+            <h2 class="about__title" data-reveal="left">O que é o <span class="red--color">TelaHot</span>?</h2>
+            <p class="about__detail" data-reveal="right">Quando eu era mais jovem ficava até tarde da noite para
+                assistir os
+                filmes do programa TelaQuente na Globo, eram muitos lançamentos e passava vários filmes de terror que me
+                deixavam com medo, rsrs, desde então eu cresci e não me recordo dos filmes que passaram antigamente, e
+                nisso surgiu o TelaHot. Relembrar os filmes que passaram no TelaQuente.</p>
+        </about>
+
+        <div class="modal">
+            <div class="modal__content">
+                <span class="modal__close modal__close--close">X</span>
+
+                <div class="modal__body">
+                    <div class="modal__thumbnail">
+                        <img class="modal__image">
+                    </div>
+
+                    <div class="modal__detail">
+                        <h1 class="modal__title"></h1>
+                        <span class="modal__release"></span>
+                        <span class="modal__genre"></span>
+                        <span class="modal__popularity"></span>
+                        <span class="modal__overview"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <span class="footer">Copyright © 2023 TelaHot by Braian Silva</span>
+    </footer>
+</body>
+
+<script src="./source/js/component/animation.js"></script>
+<script src="./source/js/component/modal.js"></script>
+
+<script src="./source/js/config/themoviedbConfig.js"></script>
+
+<script src="./source/js/controllers/hero.controller.js"></script>
+<script src="./source/js/controllers/movie.controller.js"></script>
+<script type="module" src="./source/app.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</html>
