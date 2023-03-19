@@ -1,4 +1,4 @@
-export class Modal {
+ class Modal {
     generos;
     constructor() {
         let modal = document.querySelector(".modal");
