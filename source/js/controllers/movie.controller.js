@@ -25,8 +25,10 @@ class MovieController {
                 telaquenteFilmes?.filmes.filter((filmes) => {
 
                     movie.innerHTML = filmes[ano]?.map(function (movie) {
-                        let month = new Date(Math.round((movie?.Data - 25569) * 86400 * 1000)).getMonth();
-                        let day = new Date(Math.round((movie?.Data - 25569) * 86400 * 1000)).getDate();
+
+                        let date = new Date();
+                        let month = new Date(movie?.Data).getMonth()+1;
+                        let day = new Date(movie?.Data).getDate();
 
                         return (
                             `
