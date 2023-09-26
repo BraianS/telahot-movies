@@ -36,7 +36,9 @@
 
         modalTitle.innerHTML = movie.textContent;
 
-        let responseData = this.getMovieByName(movie?.textContent);
+        let title = movie.textContent.replace(/ *\([^)]*\) */g, "")
+
+        let responseData = this.getMovieByName(title);
 
         responseData.then(response => {
 
