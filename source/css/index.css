@@ -87,6 +87,10 @@ body {
 
     .modal__content {
         width: 80%;
+    }    
+
+    .about__github {
+        width: 30rem;       
     }
 }
 
@@ -122,7 +126,7 @@ body {
 
     .modal__title {
         font-size: var(--font-size-h1);
-    }
+    }   
 
 }
 

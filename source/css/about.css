@@ -13,4 +13,52 @@
 
 .about__detail {
     font-size: var(--font-size-h5);
+    padding-bottom: 4rem;
+}
+
+.about__github {
+    width: 30rem;
+    background-color: #fff;
+    padding: .75rem;
+    border-radius: 25px;
+}
+
+.about--padding-1rem {
+    padding-top: 1rem;
+}
+
+.about__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;   
+}
+
+.about__item {
+    padding-left: 10px;
+    padding-right: 10px;
+    color:var(--second-color)
+}
+
+.about--second-color{
+    color:var(--second-color)
+}
+
+.about__circle {
+    display: flex;
+    border-radius: 50%;
+    width: 10px;
+    height: 20px;
+    background-color: #f1e05a;
+}
+
+.about--pdl--10px {
+    padding-left: 10px;
+}
+
+.about__link {
+    text-decoration: none;
+}
+
+.about--end{
+    margin-left: auto;
 }
